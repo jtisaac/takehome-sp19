@@ -6,7 +6,7 @@ This challenge is intended to expose you to some elements of our most common tec
 
 In terms of React resources, the following may be helpful:
 
-[The React Beginner's Guide](https://flaviocopes.com/react-beginners-guide/) and [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-reactjs) will be very beneficial to go through to get a complete understanding on React fundamentals. It will also beneficial to get comfortable diving into [React Docs](https://reactjs.org/docs/hello-world.html) and [Javascript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) as part of this exercise.
+[The React Beginner's Guide](https://flaviocopes.com/react-beginners-guide/) and [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-reactjs) will be very beneficial to go through to get a complete understanding on React fundamentals. It will also be beneficial to get comfortable diving into [React Docs](https://reactjs.org/docs/hello-world.html) and [Javascript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) as part of this exercise.
 
 Reading the following will help you get a sense of the big picture when it comes to developing APIs/writing server side code, and how it fits in the context of a larger web application:
 
@@ -106,7 +106,7 @@ If there doesn't exist a show with the provided `id`, return a `404` with a desc
 
 ## Part 3
 
-Extend the first `/shows` enpoint by adding the ability to query the shows based on the team they are on. You should _not_ use a url parameter like you did in Part 2. Instead, use a [query string](https://en.wikipedia.org/wiki/Query_string).
+Extend the first `/shows` endpoint by adding the ability to query the shows based on the team they are on. You should _not_ use a url parameter like you did in Part 2. Instead, use a [query string](https://en.wikipedia.org/wiki/Query_string).
 
 If `minEpisodes` is provided as a query string parameter, only return the shows which have that number or more episodes seen. If there are no such shows.
 
@@ -211,7 +211,7 @@ Tasks:
 Goal: Use nested components and props.
 
 Tasks:
-* Open the empty `Show` component which takes a shows `id`, `name`, and `episodes_seen`.
+* Open the empty `Show` component which takes a show's `id`, `name`, and `episodes_seen`.
 * Display the show name
 * Modify the `Counter` component to take the initial count as a prop, and use this value for `count` in the initial state.
 * Display a `Counter` (Look how we nested `Instructions` into `App`) and pass the number of episodes watched as prop to `Counter`
