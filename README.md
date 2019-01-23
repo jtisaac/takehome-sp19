@@ -1,6 +1,6 @@
 # The Challenge
 
-![Hack4Impact](https://uiuc.hack4impact.org/img/colored-logo.png)
+![Hack4Impact](https://uiuc.hack4impact.org/static/images/colored-logo.png)
 
 This challenge is intended to expose you to some elements of our most common technical stack: a [React](https://reactjs.org/) frontend, and a Flask backend.
 
