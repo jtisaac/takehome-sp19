@@ -40,4 +40,7 @@ def getByMinEpisodesWatched(type, episodes_seen):
                 showsByMinEpisodes.append(i)
     return showsByMinEpisodes
 
+def getByName(type, name):
+    return next((i for i in get(type) if i["name"] == name), None)
+
 

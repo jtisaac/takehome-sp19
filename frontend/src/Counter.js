@@ -10,7 +10,7 @@ class Counter extends Component {
 
   render() {
     return (
-      <label>hello ere</label>
+      <label>test</label>
     )
   }
 }

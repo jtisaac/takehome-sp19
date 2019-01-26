@@ -76,6 +76,19 @@ def get_show(id):
             return create_response(status=404, message="No show with this id exists")
     return create_response(db.getById('shows', int(id)))
 
+@app.route("/shows", methods=['POST'])
+def add_show():
+    newShow = request.get_json(force=True)
+    if newShow is None:
+        return create_response(status=422, message="Please enter JSON with 'name' and 'episodes_seen' fields")
+    elif "name" not in newShow:
+        return create_response(status=422, message="Please enter JSON with 'name' field")
+    elif "episodes_seen" not in newShow:
+        return create_response(status=422, message="Please enter JSON with 'episodes_seen' field")
+    else:
+        db.create('shows', newShow)
+        return create_response(status=201, data=db.getByName('shows', str(newShow["name"])))
+
 """
 ~~~~~~~~~~~~ END API ~~~~~~~~~~~~
 """
