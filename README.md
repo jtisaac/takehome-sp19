@@ -15,7 +15,7 @@ Reading the following will help you get a sense of the big picture when it comes
 
 This project will be broken down into multiple parts. After you finish this project, you must submit it by following the instructions below.
 
-*This exercise is due before this Monday, January 28th at 11:59PM. If you have spent over 10 hours total, submit what you have!*
+*This exercise is due before this Sunday, January 27th at 11:59PM. If you have spent over 10 hours total, submit what you have!*
 
 For any questions, feel free to email angad@hack4impact.org.
 
