@@ -4,7 +4,8 @@ class Counter extends Component {
   constructor(props) {
     super(props)
     this.state = {
-        count: 0
+        count: this.props.initCount,
+        name: this.props.name
     };
   }
   incrementClicks = () => {
@@ -17,7 +18,7 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        <h>{this.state.count}</h>
+        <h>{this.state.name} {this.state.count}</h>
         <button onClick={this.incrementClicks}>Increment</button>
         <button onClick={this.decrementClicks}>Decrement</button>
       </div>

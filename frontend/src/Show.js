@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import Counter from './Counter'
 
-class App extends Component {
+class Show extends Component {
   // YOUR CODE GOES BELOW
   
   render() {
     return (
-      <div/> 
+      <div>
+        <h3> <Counter name={this.props.name} initCount={this.props.episodes_seen} /> </h3>
+      </div>
     )
   }
 }
 
-export default App
+export default Show
