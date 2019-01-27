@@ -1,16 +1,26 @@
 import React, { Component } from 'react'
-
 class Counter extends Component {
   // YOUR CODE GOES BELOW
-
-  incrementClicks() {
-    this.setState({ clickNumber: this.state.clicks + 1 });
+  constructor(props) {
+    super(props)
+    this.state = {
+        count: 0
+    };
   }
-  decrementClicks() {}
+  incrementClicks = () => {
+    this.setState({ count: this.state.count + 1 });
+  }
+  decrementClicks = () => {
+    this.setState({ count: this.state.count - 1  });
+  }
 
   render() {
     return (
-      <label>test</label>
+      <div>
+        <h>{this.state.count}</h>
+        <button onClick={this.incrementClicks}>Increment</button>
+        <button onClick={this.decrementClicks}>Decrement</button>
+      </div>
     )
   }
 }
